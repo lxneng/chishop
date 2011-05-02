@@ -1,4 +1,6 @@
 .project
+.epio-app
+epio.ini
 .pydevproject
 .settings
 .DS_Store
