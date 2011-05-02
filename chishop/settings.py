@@ -115,7 +115,7 @@ if LOCAL_DEVELOPMENT:
     sys.path.append(os.path.dirname(__file__))
 
 ADMINS = (
-     ('sam', 'samuraiblog@gmail.com'),
+     ('chishop', 'example@example.com'),
 )
 
 MANAGERS = ADMINS
