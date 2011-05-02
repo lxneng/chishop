@@ -9,7 +9,7 @@ DJANGOPYPI_ALLOW_VERSION_OVERWRITE = False
 DJANGOPYPI_RELEASE_UPLOAD_TO = 'dists'
 
 # change to False if you do not want Django's default server to serve static pages
-LOCAL_DEVELOPMENT = True
+LOCAL_DEVELOPMENT = False
 
 REGISTRATION_OPEN = True
 ACCOUNT_ACTIVATION_DAYS = 7
@@ -33,7 +33,7 @@ DATABASE_PORT = ''
 # although not all choices may be available on all operating systems.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'America/Chicago'
+TIME_ZONE = 'America/Los_Angeles'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
@@ -102,7 +102,6 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
     'registration',
     'djangopypi',
-    'south',
     'haystack',
 )
 
@@ -116,17 +115,17 @@ if LOCAL_DEVELOPMENT:
     sys.path.append(os.path.dirname(__file__))
 
 ADMINS = (
-     ('chishop', 'example@example.org'),
+     ('sam', 'samuraiblog@gmail.com'),
 )
 
 MANAGERS = ADMINS
 
-DATABASE_ENGINE = 'sqlite3'
-DATABASE_NAME = os.path.join(os.path.abspath(os.path.dirname(chishop.__file__)), 'devdatabase.db')
-DATABASE_USER = ''
-DATABASE_PASSWORD = ''
-DATABASE_HOST = ''
-DATABASE_PORT = ''
+# DATABASE_ENGINE = 'postgresql_psycopg2'
+# DATABASE_NAME = 'chishop'
+# DATABASE_USER = 'chishop'
+# DATABASE_PASSWORD = 'chishop'
+# DATABASE_HOST = ''
+# DATABASE_PORT = ''
 
 HAYSTACK_SEARCH_ENGINE = 'whoosh'
 HAYSTACK_SITECONF = 'chishop.search_sites'
