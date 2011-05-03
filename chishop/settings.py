@@ -21,12 +21,12 @@ SERVER_EMAIL = DEFAULT_FROM_EMAIL
 
 MANAGERS = ADMINS
 
-DATABASE_ENGINE = ''
-DATABASE_NAME = ''
-DATABASE_USER = ''
-DATABASE_PASSWORD = ''
-DATABASE_HOST = ''
-DATABASE_PORT = ''
+#DATABASE_ENGINE = ''
+#DATABASE_NAME = ''
+#DATABASE_USER = ''
+#DATABASE_PASSWORD = ''
+#DATABASE_HOST = ''
+#DATABASE_PORT = ''
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -47,7 +47,8 @@ USE_I18N = True
 
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"
-MEDIA_ROOT = os.path.join(os.path.abspath(os.path.dirname(chishop.__file__)), 'media')
+#MEDIA_ROOT = os.path.join(os.path.abspath(os.path.dirname(chishop.__file__)), 'media')
+MEDIA_ROOT = '../data'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
